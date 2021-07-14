@@ -11,7 +11,9 @@
 </head>
 <body>
     <header class="container header">
-        <img src="img/logo.png" alt="logo" width="142" height="63">
+        <a href="/">
+            <img src="img/logo.png" alt="logo" width="142" height="63">
+        </a>
         <nav class="header-menu">
             <ul class="unlisting header-nav">
                 <li>
@@ -32,8 +34,76 @@
         <a href="contact.html" class="button">Contact Us</a>
     </header>
 
-    <main>
+    <main class="container">
+        <section class="contacts">
+            <h1 class="contact-title">Contact Us</h1>
 
+            <form action="" method="POST" class="contact-form">
+
+                <fieldset class="field-2-column">
+                    <div class="label-wrapper">
+                        <label for="input-name" class="contact-label">Name</label>
+                        <input type="text" id="input-name" class="" placeholder="Ivan Ivanov" class="contact-input">
+                    </div>
+                    <div class="label-wrapper">
+                        <input type="number" id="input-phone" class="contact-input">
+                        <label for="input-phone" class="contact-label">Phone</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label class="label-wrapper" class="contact-label">
+                            E-mail
+                            <input type="email" required class="contact-input">
+                        </label>
+                        
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Methods</legend>
+
+                    <ul class="unlisting checkbox-list">
+                        <li>
+                            <input type="checkbox" id="check-cash" name="cash" class="checkbox-input">
+                            <label for="check-cash" class="checkbox-label">Сash</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check-credit" name="credit" class="checkbox-input" checked>
+                            <label for="check-credit" class="checkbox-label">Сredit Сard</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check-receipt" name="receipt" class="checkbox-input">
+                            <label for="check-receipt" class="checkbox-label">Receipt</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you need a report on the services provided?</legend>
+
+                    <ul class="unlisting radio-list">
+                        <li>
+                            <input type="radio" id="radio-yes" name="report" class="radio-input">
+                            <label for="radio-yes" class="radio-label">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio-no" name="report" class="radio-input">
+                            <label for="radio-no" class="radio-label">No</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="label-wrapper">
+                    <label for="textarea">Message</label>
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <button class="button" >SUBMIT</button>
+            </form>
+
+        </section>
     </main>
 
     <section class="map">
