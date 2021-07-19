@@ -104,3 +104,22 @@
 .brands-list img {
     opacity: 0.7;
 }
+
+
+/* POPUP */
+
+.popup-form {
+    max-width: 680px;
+    width: 100%;
+    background: #EEEEEE;
+    margin: 0 auto 80px;
+    padding: 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+}
