@@ -96,9 +96,15 @@
 
 /* BRANDS */
 .brands-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
     margin-bottom: 80px;
 }
 .brands-list img {
